@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Giulia M</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <nav class="menu">
+                <a href="#">About</a>
+                <a href="#whatido">What I do</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#projects">Projects</a>
+                <a href="#contacts">Contacts</a>
+            </nav>
+        </header>
+        <section class="about">
+            <div class="foto">
+                <img class="nomobile" src="images/io.png" alt="">
+                <div class="quadrata mobile">
+                    <img src="images/io-quadrata.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="testo">
+                <h3 class="sopratitolo">Hello World!</h3>
+                <h1 class="titolo">I'm Giulia!</h1>
+                <p> I'm 35, <!-- Not for long... --> from Rome and I'm a <i><b>Graphic & Web Designer</b></i>.<br></p>
+                <!-- My passions are (too many, but I select just 3) -->
+                 
+                <p>I'm deeply invested in combining <b>clean code</b> with <b>modern web design</b> to create <i>seamless, functional digital experiences</i>.</p>
+                <p>I <i>LOVE</i> <b>music</b>, I appreciate music of <u>almost</u> all kinds and love hands-on <i>tech projects</i>. 
+                I'm very passionate about <b>DIY</b> and <i>home domotics</i>.</p>
+                <p>I'm a huge <b>F1</b> fan, I cheer on almost all the drivers on the track, but my all-time favorites are:</p>
+                <ul>
+                    <li><a href="https://it.wikipedia.org/wiki/Michael_Schumacher" target="_blank">Michael Schumacher</a></li>
+                    <li><a href="https://it.wikipedia.org/wiki/Fernando_Alonso" target="_blank">Fernando Alonso</a></li>
+                </ul>
+                <div class="gif">
+                    <img src="https://i.redd.it/99g7tzhlzna51.gif" alt="">
+                    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTVxcjE1bmcycmszamp5b2R4aTRlZ3VoY2RybmRjNDhtNWYxbW16eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7JQD2eBmQULZwQvG5O/giphy.gif" alt="">
+
+                </div>
+            </div>
+        </section>
+        <section id="whatido" class="discover revert">
+            <div class="foto nomobile"><img src="images/fondo-project.jpg" alt=""></div>
+
+            <div class="testo">
+                <h3 class="titolo bigger">What I do?</h3>
+                <p>Graphic & Web Design</p>
+                <p>GitHub Projects</p>
+            </div>
+        </section>
+        <section id="portfolio" class="portfolio">
+            <div class="testo nomobile">
+                <h3 class="sopratitolo">You would like to</h3>
+                <h3 class="titolo bigger">Discover my Portfolio!</h3>
+                <p>Sort:</p>
+                <button onclick="sortAZ()">AZ</button>
+                <button onclick="sortZA()">ZA</button>
+            </div>
+            <div class="testo mobile">
+                <h3 class="sopratitolo">Discover my</h3>
+                <h3 class="titolo bigger">Portfolio!</h3>
+            </div>
+
+            <div class="showcase">
+                <div><a href="#"><img src="images/greenspace-single.png" alt=""></a></div>
+                <div><a href="#"><img src="images/greenspace-multiple.png" alt=""></a></div>
+                <div><a href="#"><img src="images/hiroo-bottle+label.jpg" alt=""></a></div>
+                <div><a href="#"><img src="images/hiroo-bottles.jpg" alt=""></a></div>
+            </div>
+        </section>
+        <section id="projects" class="projects">
+            <div class="testo">
+                <h3 class="sopratitolo">Here's my</h3>
+                <h3 class="titolo bigger">Projects!</h3>
+            </div>
+            <div class="foto">
+                <a href="https://m-giulia.github.io/discord-website/" target="_blank"><img src="images/discord-1.jpg" alt="">
+                    <h4>Discord Website</h4>
+                    display:inline;
+                </a>
+                <a href="https://m-giulia.github.io/discord-website-flex/" target="_blank"><img src="images/discord-2.jpg" alt="">
+                    <h4>Discord Website</h4>
+                    display:flex;
+                </a>
+            </div>
+        </section>
+        <section id="contacts" class="contacts">
+            <div class="form grid">
+                <input type="text" name="nome" id="nome" placeholder="Nome" >
+                <input type="email" name="email" id="email" placeholder="Email" >
+                <textarea name="messaggio" id="messaggio" cols="30" rows="10" placeholder="Messaggio"></textarea>
+                <button onclick="controllaForm()">Invia</button>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox_id" >
+                    <label for="checkbox_id">Accetto Termini e Tiburtina</label>
+                </div>
+            </div>
+            <div class="testo">
+                <h3 class="sopratitolo">Get in touch</h3>
+                <h3 class="titolo bigger">Contact me!</h3>
+            </div>
+        </section>
+        <script src="./js/functions.js"></script>
+    </body>
+</html>
